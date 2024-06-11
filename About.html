@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <link rel="stylesheet" href="css/styles.css" />
@@ -10,7 +10,7 @@
 
   <body>
     <div class="content" id="start">
-      <div class="row indent">
+      <div class="row2 indent">
         <div class="header" style="padding-left: 0px">
           <img
             id="displaynone"
@@ -47,6 +47,31 @@
             <a class="effect-underline" href="index.html#contacts">контакты</a>
           </div>
         </div>
+
+        <input type="checkbox" id="toggle" class="input-toggler" />
+        <label for="toggle" class="menu-toggler">
+          <span class="menu-toggler-line"></span>
+          <span class="menu-toggler-line"></span>
+          <span class="menu-toggler-line"></span>
+        </label>
+
+        <aside class="sidebar">
+          <ul class="menu">
+            <li><a class="effect-underline" href="About.html">О студии</a></li>
+            <li>
+              <a class="effect-underline" href="./projects.html">Проекты</a>
+            </li>
+            <li>
+              <a class="effect-underline" href="index.html#price">Стоимость</a>
+            </li>
+            <li>
+              <a class="effect-underline" href="About.html#projects"
+                >Этапы работы</a
+              >
+            </li>
+            <li> <a class="effect-underline" href="index.html#contacts">Контакты</a></li>
+          </ul>
+        </aside>
       </div>
 
       <div class="indent"></div>
@@ -104,8 +129,7 @@
             <h3>• Исследование и анализ</h3>
             <p>
               Первый этап работы включает в&nbsp;себя изучение потребностей
-              клиента, анализ &nbsp;трендов
-              в&nbsp;соответствующей отрасли
+              клиента, анализ &nbsp;трендов в&nbsp;соответствующей отрасли
             </p>
           </div>
           <div class="stage">
@@ -118,15 +142,17 @@
           <div class="stage">
             <h3>• Дизайн и разработка</h3>
             <p>
-              После утверждения концепции приступаем к&nbsp;созданию дизайна, включая подготовку чертежей и&nbsp;другой необходимой документации
+              После утверждения концепции приступаем к&nbsp;созданию дизайна,
+              включая подготовку чертежей и&nbsp;другой необходимой документации
             </p>
           </div>
           <div class="stage">
             <h3>• Финальная реализация</h3>
             <p>
-              После утверждения окончательной версии дизайна интерьера,
-              макеты и&nbsp;чертежи передаются на&nbsp;визуализацию, а&nbsp;также 
-              подготавливается вся&nbsp;необходимая документация для&nbsp;последующей реализации проекта
+              После утверждения окончательной версии дизайна интерьера, макеты
+              и&nbsp;чертежи передаются на&nbsp;визуализацию, а&nbsp;также
+              подготавливается вся&nbsp;необходимая документация
+              для&nbsp;последующей реализации проекта
             </p>
           </div>
         </div>
@@ -290,15 +316,10 @@
               </svg>
             </div>
           </div>
-          <div class="button" onclick="location.href='#start'">
+          <div class="button" id="toup" onclick="location.href='#start'">
             <p>Наверх</p>
 
-            <img
-              id="displaynone"
-              style="padding-right: 30%"
-              src="./images/arrowtop.svg"
-              alt=""
-            />
+   
           </div>
         </div>
       </div>
