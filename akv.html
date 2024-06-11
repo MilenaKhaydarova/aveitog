@@ -22,7 +22,7 @@
 
   <body>
     <div class="content" id="start">
-      <div class="row indent">
+      <div class="row2 indent">
         <div class="header" style="padding-left: 0px">
           <img
             id="displaynone"
@@ -58,6 +58,34 @@
             <a class="effect-underline1" href="index.html#contacts">контакты</a>
           </div>
         </div>
+        <input type="checkbox" id="toggle" class="input-toggler" />
+        <label for="toggle" class="menu-toggler">
+          <span class="menu-toggler-line"></span>
+          <span class="menu-toggler-line"></span>
+          <span class="menu-toggler-line"></span>
+        </label>
+
+        <aside class="sidebar">
+          <ul class="menu">
+            <li><a class="effect-underline" href="About.html">О студии</a></li>
+            <li>
+              <a class="effect-underline" href="./projects.html">Проекты</a>
+            </li>
+            <li>
+              <a class="effect-underline" href="index.html#price">Стоимость</a>
+            </li>
+            <li>
+              <a class="effect-underline" href="About.html#projects"
+                >Этапы работы</a
+              >
+            </li>
+            <li>
+              <a class="effect-underline" href="index.html#contacts"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </aside>
       </div>
 
       <div class="row indent">
@@ -129,7 +157,6 @@
         <img style="width: 33%" src="/images/p4/p410.png" alt="" />
         <img style="width: 33%" src="/images/p4/p411.png" alt="" />
       </div>
-
 
       <div class="row1 indent" style="margin-top: 5%" id="contacts">
         <div class="column">
@@ -259,15 +286,10 @@
               </svg>
             </div>
           </div>
-          <div class="button" onclick="location.href='#start'">
+          <div class="button" id="toup" onclick="location.href='#start'">
             <p>Наверх</p>
 
-            <img
-              id="displaynone"
-              style="padding-right: 30%"
-              src="./images/arrowtop.svg"
-              alt=""
-            />
+           
           </div>
         </div>
       </div>
