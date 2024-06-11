@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <!--EmailJS-->
@@ -83,7 +83,7 @@
     </div>
 
     <div class="content" id="start">
-      <div class="row indent">
+      <div class="row2 indent">
         <div class="header" style="padding-left: 0px">
           <img
             id="displaynone"
@@ -119,6 +119,34 @@
             <a class="effect-underline" href="index.html#contacts">контакты</a>
           </div>
         </div>
+        <input type="checkbox" id="toggle" class="input-toggler" />
+        <label for="toggle" class="menu-toggler">
+          <span class="menu-toggler-line"></span>
+          <span class="menu-toggler-line"></span>
+          <span class="menu-toggler-line"></span>
+        </label>
+
+        <aside class="sidebar">
+          <ul class="menu">
+            <li><a class="effect-underline" href="About.html">О студии</a></li>
+            <li>
+              <a class="effect-underline" href="./projects.html">Проекты</a>
+            </li>
+            <li>
+              <a class="effect-underline" href="index.html#price">Стоимость</a>
+            </li>
+            <li>
+              <a class="effect-underline" href="About.html#projects"
+                >Этапы работы</a
+              >
+            </li>
+            <li>
+              <a class="effect-underline" href="index.html#contacts"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </aside>
       </div>
 
       <div class="row indent">
@@ -223,7 +251,7 @@
             </div>
             <div
               class="button"
-              style="width: 70%; margin-left: 30px"
+              style="width: 70%"
               onclick="location.href='nik.html'"
             >
               <p>Смотреть</p>
@@ -300,10 +328,7 @@
               <p>Смотреть</p>
             </div>
           </div>
-          <div
-            class="button"
-            style="width: 100%; height: 76px; margin-top: -1%"
-          >
+          <div class="button" style="width: 100%; margin-top: -1%">
             <div class="row" onclick="location.href='projects.html'">
               <p>Смотреть ещё</p>
               <span
@@ -492,11 +517,12 @@
               required
             /><img src="images/phone.png" style="height: 13px; margin: auto" />
           </div>
+
           <button
-            style="width: 100%; margin-top: 18px; height: 76px"
+            style="width: 100%; margin-top: 18px"
             class="button"
             type="submit"
-           onclick="sendapplication()"
+            onclick="sendapplication()"
           >
             <p>Отправить заявку</p>
             <span
@@ -507,6 +533,9 @@
               <span class="shaft"></span>
             </span>
           </button>
+          <a href="/politika.pdf" style="opacity: 0.5"
+            >нажимая на кнопку вы соглашаетесь с политикой конфеденциальности</a
+          >
         </div>
       </form>
 
@@ -638,15 +667,8 @@
               </svg>
             </div>
           </div>
-          <div class="button" onclick="location.href='#start'">
+          <div class="button" id="toup" onclick="location.href='#start'">
             <p>Наверх</p>
-
-            <img
-              id="displaynone"
-              style="padding-right: 30%"
-              src="./images/arrowtop.svg"
-              alt=""
-            />
           </div>
         </div>
       </div>
